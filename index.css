@@ -1,1 +1,8 @@
 /* Le code CSS spécifique à la page d'accueil */
+body{
+
+}
+
+.equipe{
+    display: flex;
+}
