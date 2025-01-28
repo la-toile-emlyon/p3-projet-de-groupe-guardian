@@ -13,10 +13,14 @@ html {
   --font-title: 'Luckiest Guy', serif;
   --font-body: 'Lexend Deca', sans-serif;
   
-  --primary-color: ;
-  --secondary-color: ;
-
-  --black-400: #121212;
+  --primary-color: #FFDE59;
+  --secondary-color: #121212;
+  --blue: #4A8BDF;
+  --white: #FBF8EF;
+  --danger: #C41830;
+  --pedagogie: #FF9F43;
+  --security: #4CAF50;
+  --marron: #794426;
 }
 
 *{
@@ -48,6 +52,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-image: url(assets/header.svg);
 }
 
 .header__menu{
@@ -66,4 +71,22 @@ body{
 }
 
 
+.header__nav-button{
+  padding: 12px 16px;
+  border: 3;
+  outline: 0;
 
+  background: var(--secondary-color);
+  border-color: var(--primary-color);
+  border-radius: 10px;
+
+
+  font-family: var(--font-body);
+  font-size: 500;
+  color: var(--white);
+}
+
+.header__nav-button:hover{
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}

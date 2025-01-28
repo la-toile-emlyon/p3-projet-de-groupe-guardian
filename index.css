@@ -16,7 +16,33 @@
     height: 400px;
 } */
 
+.partenaires{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0px 150px 0px;
+}
+
+.partenaires__logos{
+    display: flex;
+    gap: 60px
+}
+
 .partenaires img{
-    width: 40vw;
-    height:50vh
+    width: 15vw;
+    height:30vh
+}
+
+
+
+
+.temoignages__container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.temoignages__container h3,h4,h5{
+text-align: center;
 }
