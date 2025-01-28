@@ -11,10 +11,39 @@
     width: 40vw;
 }
 
-/* .fonctions img{
-    width: 200px;
-    height: 400px;
-} */
+
+.header__phrase {
+    display: flex;
+    justify-content: center;
+}
+.temoignages__container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    width: 50%;
+    
+    
+}
+
+.temoignages__container h3,h4,h5{
+text-align: center;
+}
+
+div.temoignage{
+    box-shadow: 0 2px 5px #000000e0;
+    border-radius: 1%;
+    
+}
+.temoignages p{
+    padding: 1rem; 
+   text-align: center;
+}
+.temoignages{
+    display: flex;
+    justify-content: center;
+}
+
 
 .partenaires{
     display: flex;
@@ -25,31 +54,50 @@
 
 .partenaires__logos{
     display: flex;
-    gap: 60px
+    padding-top: 40px;
+    gap: 110px
 }
 
-/* .partenaires img{
+.partenaires img{
     width: 15vw;
-    height:30vh
-} */
+    height: 20vh
+}
 
-
-
-
-.temoignages__container{
+.contact{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 30px;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.temoignages__container h3,h4,h5{
-text-align: center;
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: 58vh;
+    border: solid 1px black;
+    background: lightgray;
+    margin: 50px 0px 50px 0px;
+    padding: 20px 0px 30px 0px;
 }
 
-div.temoignage{
-    box-shadow: 0 2px 5px #000000e0;
-    border-radius: 5%;
-    
+input{
+    width: 40vw;
+    height: 60vh;
 }
+
+.contact h4{
+    padding-right: 450px;
+}
+
+textarea{
+    width: 40vw;
+    min-height: 30vh;
+}
+
+.contact button{
+    margin-top: 20px;
+    width: 70px;
+}
+
+

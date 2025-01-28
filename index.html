@@ -10,29 +10,41 @@
   </head>
 
   <body>
-    <header>
-      <nav class="header__nav">
-        <div class="header__logo">
-          <img src="#" alt="logo">
-        </div>
-  
-        <ul class="header__menu">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="/doc.html">Documentation</a></li>
-        </ul>
-  
-        <button class="header__nav-button">Tester l'application</button>
-      </nav>
-      
-      <div class="slogan">
-        <h1>Guardian : Ensemble, plus forts face aux catastrophes.</h1>
+    <nav class="header__nav">
+      <div class="header__logo">
+       <a href="index.html">
+        <img src="assets/logo/logo-black.svg" alt="">
+       </a>
       </div>
-      <div class="header__phrase">
+
+      <ul class="header__menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="/doc.html">Documentation</a></li>
+      </ul>
+
+      <button class="header__nav-button">Tester l'application</button>
+    </nav>
+
+    <header>
+      <div class="slogan">
+        <h1>Ensemble, plus forts face aux catastrophes.</h1>
         <h3>Éduquer, protéger et sauver</h3>
       </div>
     </header>
 
-    <section class="contexte"></section>
+    <section class="contexte">
+      <div class="contexte__title">
+        <h1>La mission derrière Guardian</h1>
+      </div>
+
+      <div class="contexte__texte">
+        <p>Les catastrophes naturelles surviennent souvent sans avertissement, mettant chaque année des millions de vies en péril, en particulier celles des enfants, des personnes âgées et des populations isolées. Guardian offre une solution complète pour renforcer la sécurité et la résilience face à ces crises. Grâce à des alertes en temps réel, les utilisateurs peuvent anticiper les dangers imminents. Avec des guides interactifs et des exercices pratiques, ils apprennent à se préparer efficacement. Enfin, Guardian aide à se protéger en identifiant rapidement les zones sûres et en fournissant des conseils personnalisés pour faire face aux situations d’urgence.</p>
+      </div>
+
+      <div class="contexte__buttons">
+        <button>Téléc</button>
+      </div>
+    </section>
 
     <section class="fonctionnalites">
       
@@ -70,25 +82,35 @@
     </section>
 
     <section class="temoignages">
+      <h1>Témoignages</h1>
       <div class="temoignages__container">
 
         <div class="temoignage">
           <img src="#" alt="Avatar">
-          
-          <p>"Lors d’un tremblement de terre, j’étais complètement perdu et paniqué. Guardian m’a permis de garder mon calme. J’ai reçu une alerte avec des consignes immédiates pour me mettre à l’abri. En plus, j’ai pu envoyer ma localisation à un secouriste via la fonction "Besoin d’aide". La section éducative est aussi très utile : je me sens beaucoup plus préparé maintenant. C’est un outil indispensable pour toute personne vivant dans une zone à risque."</p>
-          <h3>Karim</h3>
-          <h4>42</h4>
-          <h5>Maroc</h5>
+          <h3>Fatima</h3>
+          <h4>34</h4>
+          <h5>Mayotte</h5>
+          <p>"Grâce à Guardian, j’ai su exactement quoi faire lorsque le cyclone a frappé notre île. 
+            J’ai pu guider ma famille en sécurité."</p>
         </div>
-      
-
+        
+        
+        <div class="temoignage">
+          <img src="#" alt="Avatar">
+          <h3>Jean</h3>
+          <h4>40</h4>
+          <h5>Haïti</h5>
+          <p>"Je pensais que les séismes étaient rares, jusqu’à ce que notre maison tremble. 
+            Guardian m’a aidé à apprendre comment réagir."</p>
+        </div>
 
         <div class="temoignage">
           <img src="#" alt="Avatar">
-          <h3>Mareva</h3>
-          <h4>19</h4>
-          <h5>Pays</h5>
-          <p>"Je n’avais jamais réfléchi à ce que je devais faire en cas de cyclone, même si notre région est souvent exposée. Grâce à Guardian, j’ai appris énormément de choses avec les vidéos éducatives adaptées à mon âge. Quand un cyclone s’est approché de notre île, j’ai su exactement comment protéger notre maison et rassurer mes petits frères. L’application m’a aussi permis de trouver un abri sûr tout près grâce à la carte. C’est bien plus qu’une appli, c’est un outil indispensable pour nous ici."</p>
+          <h3>Sophie</h3>
+          <h4>39</h4>
+          <h5>France</h5>
+          <p>"Mon fils de 12 ans a utilisé Guardian pour apprendre les bases des secours. Un jour, 
+            il a pu aider un voisin blessé lors d’un incendie."</p>
         </div>
 
       </div>
@@ -98,35 +120,32 @@
 
       <h1>Ils nous font confiances</h1>
       <div class="partenaires__logos">
-        <img src="assets/logo_partenaires/ministere_logo2.svg" alt="ministere">
+        <a href="https://www.interieur.gouv.fr/" target="_blank"> <img src="assets/logo_partenaires/ministere_logo2.svg" alt="ministere">
 
-        <img src="assets/logo_partenaires/unicef_logo.svg" alt="logo">
+        <a href="https://www.unicef.fr/" target="_blank"> <img src="assets/logo_partenaires/unicef_logo.svg" alt="logo">
 
-        <!-- <img src="assets/logo_partenaires/unesco.svg" alt="unesco"> -->
-
-        <img src="assets/logo_partenaires/handicap_international_logo.svg" alt="logo">
-
-        <img src="assets/logo_partenaires/croix_rouge_logo.svg" alt="logo">
+        <a href="https://www.croix-rouge.fr/" target="_blank"> <img src="assets/logo_partenaires/croix_rouge_logo.svg" alt="logo">
+        
+          <a href="https://www.handicap-international.fr/fr/index" target="_blank"> <img src="assets/logo_partenaires/handicap_international_logo.svg" alt="logo">
       </div>
     
     </section>
 
     <section class="contact">
-      <div id="contactFormContainer" class="hidden">
-        <form id="contactForm">
-          <h2>Contactez-nous</h2>
-          <label for="name">Nom :</label>
-          <input type="text" id="name" name="name" required>
-    
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required>
-    
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-    
-          <button type="submit">Envoyer</button>
-          <button type="button" id="hideFormBtn">Fermer</button>
-        </form>
+
+      <h3>Contact</h3>
+      <div class="contact__form">
+        <h4>Nom</h4>
+        <input type="text" id="name" name="name" required>
+
+        <h4>Email</h4>
+        <input type="email" id="email" name="email" required>
+
+        <h4>Message</h4>
+        <textarea class="message" name="message" rows="5" m required></textarea>
+
+        <button class="envoyer">Envoyer</button>
+      
       </div>
 
     </section>

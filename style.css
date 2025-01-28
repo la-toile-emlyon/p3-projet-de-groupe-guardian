@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 @import url("index.css");
 @import url("doc.css");
 
@@ -13,6 +15,7 @@ html {
 :root{
   --font-title: 'Luckiest Guy', serif;
   --font-body: 'Lexend Deca', sans-serif;
+  --font-logo: "oswald", sans-serif;
   
   --primary-color: #FFDE59;
   --secondary-color: #121212;
@@ -40,15 +43,19 @@ body{
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
-
-  /* background image à finaliser */
-  /* background-image: url(assets/bg\ image.svg);
-  background-repeat: no-repeat; */
 }
 
 header{
   background-image: url(assets/header.svg);
+  background-size: cover;
+  min-height: 125vh;
   height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header__nav{
@@ -58,7 +65,13 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+
+  position: fixed;
+  width: 100%;
+}
+
+.header__logo img{
+  height: 25px;
 }
 
 .header__menu{
@@ -96,3 +109,4 @@ header{
   background: var(--primary-color);
   color: var(--secondary-color);
 }
+
