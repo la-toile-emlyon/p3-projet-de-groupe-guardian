@@ -28,10 +28,10 @@
     gap: 60px
 }
 
-.partenaires img{
+/* .partenaires img{
     width: 15vw;
     height:30vh
-}
+} */
 
 
 
@@ -41,8 +41,15 @@
     justify-content: center;
     gap: 30px;
     padding: 30px;
+    
 }
 
 .temoignages__container h3,h4,h5{
 text-align: center;
+}
+
+div.temoignage{
+    box-shadow: 0 2px 5px #000000e0;
+    border-radius: 5%;
+    
 }

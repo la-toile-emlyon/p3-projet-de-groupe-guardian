@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&display=swap');
+@import url("index.css");
+@import url("doc.css");
+
+
 
 html {
   height: 100%;
   width: 100%;
 }
-
-@import url("index.css");
-@import url("doc.css");
 
 :root{
   --font-title: 'Luckiest Guy', serif;
@@ -45,6 +46,11 @@ body{
   background-repeat: no-repeat; */
 }
 
+header{
+  background-image: url(assets/header.svg);
+  height: 100%;
+}
+
 .header__nav{
   padding : 20px; 
 
@@ -52,7 +58,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url(assets/header.svg);
+  
 }
 
 .header__menu{
