@@ -1,8 +1,27 @@
 /* Le code CSS spécifique à la page d'accueil */
-body{
 
+.fonctionalites{
+    display: flex;
 }
 
-.equipe{
+.fonction__map{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fonction-text{
+    width: 40vw;
+}
+
+.fonction-appel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fonction-former{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

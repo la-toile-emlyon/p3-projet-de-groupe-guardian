@@ -1,4 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&display=swap');
+
 html {
   height: 100%;
   width: 100%;
+}
+
+@import url("index.css");
+@import url("doc.css");
+
+:root{
+  --luckiest-guy: 'Luckiest Guy', serif;
+  --lexend-deca: 'Lexend Deca', sans-serif;
+  
+  --primary-color: ;
+  --secondary-color: ;
+
+  --black-400: #121212;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: var(--);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__nav{
+  padding : 20px; 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+}
+
+.header__menu li{
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--lexend-deca);
 }

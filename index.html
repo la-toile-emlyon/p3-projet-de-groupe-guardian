@@ -10,12 +10,12 @@
   </head>
 
   <body>
-    <nav class="header-nav">
-      <div class="header-logo">
+    <nav class="header__nav">
+      <div class="headerlogo">
         <img src="" alt="logo">
       </div>
 
-      <ul class="header-menu">
+      <ul class="header__menu">
         <li><a href="#">Accueil</a></li>
         <li><a href="/doc.html">Documentation</a></li>
       </ul>
@@ -27,7 +27,7 @@
       <div class="slogan">
         <h1>Guardian : Ensemble, plus forts face aux catastrophes.</h1>
       </div>
-      <div class="header-phrase">
+      <div class="header__phrase">
         <h3>Éduquer, protéger et sauver</h3>
       </div>
     </header>
@@ -36,19 +36,35 @@
 
     <section class="fonctionnalites">
       
-      <div class="fonction1">
-        <h3>Cartographie en temps réel</h3>
-        <p>Localisez les abris, hôpitaux, routes praticables et zones à risque grâce à un code couleur clair (vert, jaune, rouge). Identifiez aussi les personnes en danger et les gardiens disponibles.</p>
+      <div class="fonction__map">
+          <div class="fonction-text">
+            <h3>Cartographie en temps réel</h3>
+            <p>Localisez les abris, hôpitaux, routes praticables et zones à risque grâce à un code couleur clair (vert, jaune, rouge). Identifiez aussi les personnes en danger et les gardiens disponibles.</p>
+          </div>
+          <div class="fonction-img">
+            <img src="" alt="fonction-mockup">
+          </div>
+        
       </div>
 
-      <div class="fonction2">
-        <h3>Appeler un guardian</h3>
-        <p>Signalez votre situation via assistant vocal ou formulaire (ex. : blessé, bloqué). Une alerte avec votre localisation et fiche médicale est envoyée aux gardiens proches. Suivez leur arrivée en temps réel.</p>
+      <div class="fonction-appel">
+        <div class="fonction-text">
+          <h3>Appeler un guardian</h3>
+          <p>Signalez votre situation via assistant vocal ou formulaire (ex. : blessé, bloqué). Une alerte avec votre localisation et fiche médicale est envoyée aux gardiens proches. Suivez leur arrivée en temps réel.</p>
+        </div>
+        <div class="fonction-img">
+          <img src="" alt="fonction-mockup">
+        </div>
       </div>
 
-      <div class="fonction3">
-        <h3>Guides éducatifs</h3>
-        <p>Accédez à des fiches adaptées aux risques locaux, avec suivi des progrès, quizz, et badges. Devenez gardien pour participer aux secours.</p>
+      <div class="fonction-former">
+        <div class="fonction-text">
+          <h3>Guides éducatifs</h3>
+          <p>Accédez à des fiches adaptées aux risques locaux, avec suivi des progrès, quizz, et badges. Devenez gardien pour participer aux secours.</p>
+        </div>
+        <div class="fonction-img">
+          <img src="" alt="fonction-mockup">
+        </div>
       </div>
 
     </section>
@@ -56,24 +72,16 @@
     <section class="temoignages">
       <div class="temoignages-container">
 
-        <div class="temoignage-card">
-          <img alt="Avatar">
-          <h3>Awa</h3>
-          <h4>29</h4>
-          <h5>Pays</h5>
-          <p>"Je vis dans une région sujette aux inondations, et je n’ai jamais su quoi faire en cas d’urgence. L’application Guardian m’a sauvé la vie et celle de ma famille ! Quand l’eau a commencé à monter, j’ai pu suivre les instructions claires et trouver un abri proche grâce à la carte interactive. Ce que j’aime le plus, c’est l’assistance vocale qui m’a guidée étape par étape sans que je doive lire l’écran. Merci pour cette application incroyable !"</p>
-        </div>
-
-        <div class="temoignage-card">
-          <img alt="Avatar">
+        <div class="temoignage">
+          <img src="" alt="Avatar">
           <h3>Karim</h3>
           <h4>42</h4>
           <h5>Maroc</h5>
-          <p>"Lors d’un tremblement de terre, j’étais complètement perdu et paniqué. Guardian m’a permis de garder mon calme. J’ai reçu une alerte avec des consignes immédiates pour me mettre à l’abri. En plus, j’ai pu envoyer ma localisation à un secouriste via la fonction ‘Besoin d’aide’. La section éducative est aussi très utile : je me sens beaucoup plus préparé maintenant. C’est un outil indispensable pour toute personne vivant dans une zone à risque."</p>
+          <p>"Lors d’un tremblement de terre, j’étais complètement perdu et paniqué. Guardian m’a permis de garder mon calme. J’ai reçu une alerte avec des consignes immédiates pour me mettre à l’abri. En plus, j’ai pu envoyer ma localisation à un secouriste via la fonction "Besoin d’aide". La section éducative est aussi très utile : je me sens beaucoup plus préparé maintenant. C’est un outil indispensable pour toute personne vivant dans une zone à risque."</p>
         </div>
 
-        <div class="temoignage-card">
-          <img alt="Avatar">
+        <div class="temoignage">
+          <img src="" alt="Avatar">
           <h3>Mareva</h3>
           <h4>19</h4>
           <h5>Pays</h5>
@@ -83,7 +91,38 @@
       </div>
     </section>
 
-    <section class="contact"></section>
+    <section class="partenaires">
+
+      <h1>Ils nous font confiances</h1>
+      <div class="partenaires-logos">
+        <img src="" alt="logo">
+        <img src="" alt="logo">
+        <img src="" alt="logo">
+        <img src="" alt="logo">
+        <img src="" alt="logo">
+      </div>
+    
+    </section>
+
+    <section class="contact">
+      <div id="contactFormContainer" class="hidden">
+        <form id="contactForm">
+          <h2>Contactez-nous</h2>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+    
+          <button type="submit">Envoyer</button>
+          <button type="button" id="hideFormBtn">Fermer</button>
+        </form>
+      </div>
+
+    </section>
 
     <footer></footer>
 
