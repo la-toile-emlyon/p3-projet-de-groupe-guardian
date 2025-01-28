@@ -3,14 +3,156 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
+    <title>Guardian - Page d'accueil</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
     <script src="script.js" type="text/javascript"></script>
   </head>
 
   <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
+    <nav class="header__nav">
+      <div class="header__logo">
+       <a href="index.html">
+        <img src="assets/logo/logo-black.svg" alt="">
+       </a>
+      </div>
+
+      <ul class="header__menu">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="/doc.html">Documentation</a></li>
+      </ul>
+
+      <button class="header__nav-button">Tester l'application</button>
+    </nav>
+
+    <header>
+      <div class="slogan">
+        <h1>Ensemble, plus forts face aux catastrophes.</h1>
+        <h3>Éduquer, protéger et sauver</h3>
+      </div>
+    </header>
+
+    <section class="contexte">
+      <div class="contexte__title">
+        <h1>La mission derrière Guardian</h1>
+      </div>
+
+      <div class="contexte__texte">
+        <p>Les catastrophes naturelles surviennent souvent sans avertissement, mettant chaque année des millions de vies en péril, en particulier celles des enfants, des personnes âgées et des populations isolées. Guardian offre une solution complète pour renforcer la sécurité et la résilience face à ces crises. Grâce à des alertes en temps réel, les utilisateurs peuvent anticiper les dangers imminents. Avec des guides interactifs et des exercices pratiques, ils apprennent à se préparer efficacement. Enfin, Guardian aide à se protéger en identifiant rapidement les zones sûres et en fournissant des conseils personnalisés pour faire face aux situations d’urgence.</p>
+      </div>
+
+      <div class="contexte__buttons">
+        <button>Téléc</button>
+      </div>
+    </section>
+
+    <section class="fonctionnalites">
+      
+      <div class="fonctions">
+          <div class="fonction__text">
+            <h3>Cartographie en temps réel</h3>
+            <p>Localisez les abris, hôpitaux, routes praticables et zones à risque grâce à un code couleur clair (vert, jaune, rouge). Identifiez aussi les personnes en danger et les gardiens disponibles.</p>
+          </div>
+          <div class="fonction__img">
+            <img src="#" alt="fonction__mockup">
+          </div>
+        
+      </div>
+
+      <div class="fonctions">
+        <div class="fonction__img">
+          <img src="#" alt="fonction__mockup">
+        </div>
+        <div class="fonction__text">
+          <h3>Appeler un guardian</h3>
+          <p>Signalez votre situation via assistant vocal ou formulaire (ex. : blessé, bloqué). Une alerte avec votre localisation et fiche médicale est envoyée aux gardiens proches. Suivez leur arrivée en temps réel.</p>
+        </div>
+      </div>
+
+      <div class="fonctions">
+        <div class="fonction__text">
+          <h3>Guides éducatifs</h3>
+          <p>Accédez à des fiches adaptées aux risques locaux, avec suivi des progrès, quizz, et badges. Devenez gardien pour participer aux secours.</p>
+        </div>
+        <div class="fonction__img">
+          <img src="#" alt="fonction__mockup">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="temoignages">
+      <h1>Témoignages</h1>
+      <div class="temoignages__container">
+
+        <div class="temoignage">
+          <img src="#" alt="Avatar">
+          <h3>Fatima</h3>
+          <h4>34</h4>
+          <h5>Mayotte</h5>
+          <p>"Grâce à Guardian, j’ai su exactement quoi faire lorsque le cyclone a frappé notre île. 
+            J’ai pu guider ma famille en sécurité."</p>
+        </div>
+        
+        
+        <div class="temoignage">
+          <img src="#" alt="Avatar">
+          <h3>Jean</h3>
+          <h4>40</h4>
+          <h5>Haïti</h5>
+          <p>"Je pensais que les séismes étaient rares, jusqu’à ce que notre maison tremble. 
+            Guardian m’a aidé à apprendre comment réagir."</p>
+        </div>
+
+        <div class="temoignage">
+          <img src="#" alt="Avatar">
+          <h3>Sophie</h3>
+          <h4>39</h4>
+          <h5>France</h5>
+          <p>"Mon fils de 12 ans a utilisé Guardian pour apprendre les bases des secours. Un jour, 
+            il a pu aider un voisin blessé lors d’un incendie."</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="partenaires">
+
+      <h1>Ils nous font confiances</h1>
+      <div class="partenaires__logos">
+        <a href="https://www.interieur.gouv.fr/" target="_blank"> <img src="assets/logo_partenaires/ministere_logo2.svg" alt="ministere">
+
+        <a href="https://www.unicef.fr/" target="_blank"> <img src="assets/logo_partenaires/unicef_logo.svg" alt="logo">
+
+        <a href="https://www.croix-rouge.fr/" target="_blank"> <img src="assets/logo_partenaires/croix_rouge_logo.svg" alt="logo">
+        
+          <a href="https://www.handicap-international.fr/fr/index" target="_blank"> <img src="assets/logo_partenaires/handicap_international_logo.svg" alt="logo">
+      </div>
+    
+    </section>
+
+    <section class="contact">
+
+      <h3>Contact</h3>
+      <div class="contact__form">
+        <h4>Nom</h4>
+        <input type="text" id="name" name="name" required>
+
+        <h4>Email</h4>
+        <input type="email" id="email" name="email" required>
+
+        <h4>Message</h4>
+        <textarea class="message" name="message" rows="5" m required></textarea>
+
+        <button class="envoyer">Envoyer</button>
+      
+      </div>
+
+    </section>
+
+    <footer></footer>
+
+    
+    <script src="script.js"></script>
   </body>
 </html>
