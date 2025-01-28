@@ -10,8 +10,8 @@ html {
 @import url("doc.css");
 
 :root{
-  --luckiest-guy: 'Luckiest Guy', serif;
-  --lexend-deca: 'Lexend Deca', sans-serif;
+  --font-title: 'Luckiest Guy', serif;
+  --font-body: 'Lexend Deca', sans-serif;
   
   --primary-color: ;
   --secondary-color: ;
@@ -32,10 +32,13 @@ a{
 }
 
 body{
-  font-family: var(--);
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
+
+  /* background image à finaliser */
+  /* background-image: url(assets/bg\ image.svg);
+  background-repeat: no-repeat; */
 }
 
 .header__nav{
@@ -45,12 +48,22 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
 
-  list-style: none;
+.header__menu{
+  display: flex;
+  gap: 20px;
 }
 
 .header__menu li{
   font-weight: 500;
   font-size: 16px;
-  font-family: var(--lexend-deca);
+  font-family: var(--font-body);
+
+  list-style-type: none;
+
+  cursor: pointer;
 }
+
+
+

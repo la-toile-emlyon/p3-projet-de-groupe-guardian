@@ -1,27 +1,22 @@
 /* Le code CSS spécifique à la page d'accueil */
 
-.fonctionalites{
-    display: flex;
-}
-
-.fonction__map{
+.fonctions{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 150px 0px 200px 0px;
 }
 
-.fonction-text{
+.fonction__text{
     width: 40vw;
 }
 
-.fonction-appel{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+/* .fonctions img{
+    width: 200px;
+    height: 400px;
+} */
 
-.fonction-former{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.partenaires img{
+    width: 40vw;
+    height:50vh
 }
