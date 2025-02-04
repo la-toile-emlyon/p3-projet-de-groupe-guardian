@@ -1,240 +1,338 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Guardian - Page d'accueil</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/variation logo.svg">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian - landing page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="doc.css" type="text/css">
+    <link rel="stylesheet" href="doc.html">
+    <link rel="icon" type="image/x-icon" href="assets/Logo/variation logo.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <a href="index.html" rel="noreferrer noopener">
+                <img src="assets/Logo/Logo black.svg" alt="logo" class="black">
+                <img src="assets/Logo/Logo white.svg" alt="logo" class="white">
+            </a>
+        </div>
 
-  <body>
-    <nav class="header__nav">
-      <div class="header__logo">
-       <a href="index.html">
-        <img src="assets/logo/logo-black.svg" alt="">
-       </a>
-      </div>
-
-      <ul class="header__menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="/doc.html">Documentation</a></li>
-      </ul>
-
-      <button class="header__nav-button">Tester l'application</button>
+        <div class="nav__button">
+            <button class="nav__logo-btn-doc">
+                <a href="doc.html">Documentation</a>
+            </button>
+    
+            <button class="nav__logo-btn">
+                Téléchargez l'application
+            </button>
+        </div>
     </nav>
 
     <header>
-      <div class="icon__sauvetage2">
-        <img src="assets/icons/Sauvetage-2.svg" alt="Sauvetage">
-      </div>
+        <div class="slogan">
+            <h1>
+                Ensemble, plus forts <br>face aux catastrophes
+            </h1>
+    
+            <h3>
+                Éduquer, protéger et sauver
+            </h3>
+        </div>
+    
+        <div id="nuages">
+            <img src="assets/nuages/nuage__1.svg" alt="nuage" class="nuage__1">
+            <img src="assets/nuages/nuage__2.svg" alt="nuage" class="nuage__2">
+            <img src="assets/nuages/nuage__3.svg" alt="nuage" class="nuage__3">
+            <img src="assets/nuages/nuage__4.svg" alt="nuage" class="nuage__4">
+        </div>
+    
+        <div class="icons">
+            <img src="assets/Tremblement de terre.svg" alt="Tremblement de terre" class="icon__tremblement">
+            <img src="assets/Tremblement de terre-3.svg" alt="Tremblement de terre" class="icon__tremblement-2">
+            <img src="assets/Sauvetage-2.svg" alt="Sauvetage" class="icon__sauvetage-2">
+            <img src="assets/Rectangle.svg" alt="Rectangle" class="icon__rectangle">
+        </div>
+    
+        <div class="mockup">
+            <img src="assets/mockup.png" alt="App mockup">
+        </div>
+    
+        <div class="header__buttons">
+            <a href="https://www.apple.com/fr/app-store/" target="_blank" rel="noopener noreferrer"><img src="assets/App store.png" alt="App store"></a>
+            <a href="https://play.google.com/store/games?gl=FR&utm_source=emea_Med&utm_medium=hasem&utm_content=Oct2020&utm_campaign=Evergreen&pcampaignid=MKT-EDR-emea-fr-1710138-Med-hasem-py-Evergreen-Oct2020-Text_Search_BKWS%7CONSEM_kwid_43700007201121919&gad_source=1&gclid=CjwKCAiA74G9BhAEEiwA8kNfpW78c5BzZmTjNGSJawACp-_Y3PQDDs2e5CPwB2mk7RF9qMNzuFBo3RoCzDYQAvD_BwE&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer"><img src="assets/google play.png" alt="Google store"></a>
+        </div>
     </header>
 
     <section class="contexte">
-      <div class="contexte__title">
-        <h1>La mission derrière Guardian</h1>
-      </div>
+        <div class="contexte__texte">
+            <h1>
+                La mission derrière Guardian
+            </h1>
+    
+            <p>
+                Les catastrophes naturelles surviennent souvent sans avertissement, mettant chaque année des millions de vies en péril, en particulier celles des enfants, <br> des personnes âgées et des populations isolées. Guardian offre une solution complète pour renforcer la sécurité et la résilience face à ces crises. <br> Grâce à des alertes en temps réel, les utilisateurs peuvent anticiper les dangers imminents. Avec des guides interactifs et des exercices pratiques, ils apprennent à se préparer efficacement. Enfin, Guardian aide à se protéger en identifiant rapidement les zones sûres et en fournissant des conseils personnalisés pour faire face aux situations d’urgence.
+            </p>
+        </div>
+    </section>
 
-      <div class="contexte__texte">
-        <p>Les catastrophes naturelles surviennent souvent sans avertissement, mettant chaque année des millions de vies en péril, en particulier celles des enfants, des personnes âgées et des populations isolées. Guardian offre une solution complète pour renforcer la sécurité et la résilience face à ces crises. Grâce à des alertes en temps réel, les utilisateurs peuvent anticiper les dangers imminents. Avec des guides interactifs et des exercices pratiques, ils apprennent à se préparer efficacement. Enfin, Guardian aide à se protéger en identifiant rapidement les zones sûres et en fournissant des conseils personnalisés pour faire face aux situations d’urgence.</p>
+    <section id="chiffres">
+      <h1>
+          Pourquoi tu dois être prêt ?
+      </h1>
+  
+      <h2>
+          Les catastrophes naturelles affectent chaque année des <strong>millions de personnes</strong>.  
+      </h2>
+  
+      
+      <div class="chiffre rotate">
+          <h3>
+              <b>Les enfants sont 14 fois plus vulnérables</b> que les adultes en cas de catastrophe naturelle.
+          </h3>
+          
+          <p class="rotate">
+              Source: Unicef.org
+          </p>
       </div>
-
-      <div class="contexte__buttons">
-        <img src="assets/button/google play.png" alt="google play">
-        <img src="assets/button/App store.png" alt="App store">
+  
+      <div class="chiffre">
+          <h3>
+              En 2024, <b>de 310 milliards de dollars</b> de pertes économiques mondiales dues aux catastrophes.
+          </h3>
+          
+          <p>
+              Source: Catnat.net
+          </p>
       </div>
+  
+      <div class="chiffre">
+          <h3>
+              En Afrique, <b>plus de 3,5 millions de personnes</b> ont été déplacées en raison d’inondations en 2024
+          </h3>
+          
+          <p>
+              Source: La Croix rouge
+          </p>
+      </div>
+  
+      <div class="chiffre rotate">
+          <h3>
+              <b>47 000 décès en Europe en 2023</b> à cause des vagues de chaleur, majoritairement des personnes âgées.
+          </h3>
+          
+          <p class="rotate">
+              Source: LeMonde.fr
+          </p>
+      </div>
+  
+      <h2 class="bottom">
+          Ne sois pas une statistique, sois prêt avec Guardian.
+      </h2>
     </section>
 
     <section class="fonctionnalites">
-      <h1>🚀 Les Super-Pouvoirs de Guardian</h1>
+        <h1>
+            🚀 Les Super-Pouvoirs de Guardian
+        </h1>
 
-      <div class="fonctions">
-        <div class="fonction__text">
-            <h2>#1 Alertes en Temps Réel</h2>
-            <p>Guardian te prévient dès qu’une catastrophe approche ! Grâce à des alertes précises adaptées à l’endroit où tu te trouves, tu peux agir rapidement. Et même sans Internet, l’application reste active pour que tu ne sois jamais pris au dépourvu.</p>
-        </div>
-
-          <div class="fonction__img">
-            <img src="#" alt="fonction__mockup">
-          </div> 
-      </div>
-
-      <div class="fonctions">
-        <div class="fonction__text">
-            <h2>#2 Apprendre en s’amusant !</h2>
-            <p>Plus tu connais les dangers, mieux tu peux réagir ! 🧠 Apprends en t’amusant avec des quiz et des mini-jeux interactifs. Découvre des vidéos simples et captivantes pour tout comprendre facilement. Relève des défis, gagne des badges et deviens un véritable pro de la survie !</p>
-        </div>
-
-          <div class="fonction__img">
-            <img src="#" alt="fonction__mockup">
-          </div> 
-      </div>
-
-      <div class="fonctions">
-        <div class="fonction__text">
-            <h2>#3 Un bouton d’urgence ultra rapide</h2>
-            <p>En cas d’urgence, demande de l’aide en un seul clic ! Contacte les secours les plus proches, partage ta position pour qu’ils te trouvent rapidement, et accède aux numéros d’urgence même sans connexion Internet.</p>
-        </div>
-
-          <div class="fonction__img">
-            <img src="#" alt="fonction__mockup">
-          </div> 
-      </div>
-
-      <div class="fonctions">
-        <div class="fonction__text">
-            <h2>#4 Une carte: des lieux sûrs</h2>
-            <p>Quand les choses se compliquent, savoir où aller peut tout changer ! Trouve les abris les plus proches en temps réel, suis le chemin le plus sûr pour t’y rendre, et accède à des conseils pratiques adaptés à chaque situation.</p>
-        </div>
-
-          <div class="fonction__img">
-            <img src="#" alt="fonction__mockup">
-          </div> 
-      </div>
-    </section>
-
-    <section class="chiffres">
-      <h1>Pourquoi tu dois être prêt ?</h1>
-      <p>
-        Les catastrophes naturelles affectent chaque année des millions de personnes. Voici quelques chiffres marquants :
-      </p>
-
-      <div class="unesco">
-        <p>
-          <strong>Les enfants sont 14 fois plus vulnérables</strong> que les adultes en cas de catastrophe naturelle.
-        </p>
-        <p><strong>Source :</strong> Unicef.org</p>
-      </div>
-
-      <div class="catnat">
-        <p>
-          En 2024, <strong>plus de 310 milliards de dollars</strong> de pertes économiques mondiales dues aux catastrophes.
-        </p>
-        <p><strong>Source :</strong> Catnat.net</p>
-      </div>
-
-      <div class="croixrouge">
-        <p>
-          En Afrique, <strong>plus de 3,5 millions de personnes</strong> ont été déplacées en raison d’inondations en 2024
-        </p>
-        <p><strong>Source :</strong> La Croix rouge</p>
-      </div>
-
-      <div class="lemonde">
-        <p>
-          <strong>47 000 décès en Europe en 2023</strong> à cause des vagues de chaleur, majoritairement des personnes âgées.
-        </p>
-        <p><strong>Source :</strong> LeMonde.fr</p>
-      </div>
-
-      <p>
-         Ne sois pas une statistique. Sois prêt avec Guardian.
-      </p>
-    </section>
-
-    <!-- revoir cette section -->
-    <section class="temoignages">
-      <h1>
-        Ils ont choisis GUARDIAN
-      </h1>
-
-      <div class="temoignage">
-        <div class="temoignage__1">
-          <p>
-            Quand le cyclone est arrivé, Guardian m’a dit exactement quoi faire. Grâce à l’appli, ma famille et moi sommes restés en sécurité.
-          </p>
-
-          <div>
-            <img src="#" alt="photo de profil">
-          </div>
-
-          <div>
-            <h3><strong>Awa</strong>, 12 ans</h3>
-            <p><strong>Mayotte</strong></p>
-          </div>
-        </div>
-
-        <div class="temoignage__2">
-          <p>
-            Je pensais que les séismes étaient rares, jusqu’à ce que notre maison tremble. Guardian m’a aidé à apprendre comment réagir.
-          </p>
-
-          <div>
-            <img src="#" alt="photo de profil">
-          </div>
-          
-          <div>
-            <h3><strong>Jean</strong>, 18 ans</h3>
-            <p><strong>Haïti</strong></p>
-          </div>
-        </div>
-
-        <div class="temoignage__2">
-          <p>
-            Mon fils de 12 ans a utilisé Guardian pour apprendre les bases des secours. Un jour, il a pu aider un voisin blessé lors d’un incendie.
-          </p>
-
-          <div>
-            <img src="#" alt="photo de profil">
-          </div>
-          
-          <div>
-            <h3><strong>Sophie</strong>, 39 ans</h3>
-            <p><strong>France</strong></p>
-          </div>
-        </div>
-      </div>
-      
-      <p>
-        Rejoins les milliers d’utilisateurs qui font confiance à Guardian.
-      </p>
-    </section>
-
-    <!-- revoir cette section -->
-    <section class="partenaires">
-      <h1>Guardian, une appli fiable et soutenue par les Experts !</h1>
-
-      <p>
-        Nous travaillons avec les meilleures organisations pour te donner les infos les plus sûres.
-      </p>
-
-      <div class="partenaires__logos">
-        <a href="https://www.interieur.gouv.fr/" target="_blank"> <img src="assets/logo_partenaires/ministere_logo2.svg" alt="ministere">
-
-        <a href="https://www.unicef.fr/" target="_blank"> <img src="assets/logo_partenaires/unicef_logo.svg" alt="logo">
-
-        <a href="https://www.croix-rouge.fr/" target="_blank"> <img src="assets/logo_partenaires/croix_rouge_logo.svg" alt="logo">
-        
-          <a href="https://www.handicap-international.fr/fr/index" target="_blank"> <img src="assets/logo_partenaires/handicap_international_logo.svg" alt="logo">
-          </a>
-      </div>
-    </section>
-
-    <!-- revoir la section contact -->
-    <section class="contact"> 
-      <h1>Et si ton école, ta ville ou ton association rejoignait Guardian ? <br>📧 Contacte-nous à contact@guardian.com</h1>
-
-      <div class="contact__form">
-        <h4>Nom</h4>
-        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-
-        <h4>Email</h4>
-        <input type="email" id="email" name="email" required>
-
-        <h4>Message</h4>
-        <textarea class="message" name="message" rows="5" m required></textarea>
-
-        <button class="envoyer">Envoyer</button>
-      
-      </div>
-
-    </section>
-
-    <footer></footer>
-
+        <div class="fonctionnalites__container">
+            <div class="fonctionnalite">
+                <div class="fonctionnalite__texte">
+                    <h2>#1 Alertes en Temps Réel</h2>
+                    <p>
+                        Guardian te prévient dès qu’une catastrophe approche ! Grâce à des alertes précises adaptées à l’endroit où tu te trouves, tu peux agir rapidement. Et même sans Internet, l’application reste active pour que tu ne sois jamais pris au dépourvu.
+                    </p>
+                </div>
+                <img src="assets/Tornado.svg" alt="Tornado">
+            </div>
     
+            <div class="fonctionnalite reverse">
+                <img src="assets/Tsunami-2.svg" alt="Tsunami">
+                <div class="fonctionnalite__texte">
+                    <h2>#2 Apprendre en s’amusant !</h2>
+                    <p>
+                        Plus tu connais les dangers, mieux tu peux réagir ! 🧠 Apprends en t’amusant avec des quiz et des mini-jeux interactifs. Découvre des vidéos simples et captivantes pour tout comprendre facilement. Relève des défis, gagne des badges et deviens un véritable pro de la survie !
+                    </p>
+                </div>
+            </div>
+
+            <div class="fonctionnalite">
+                <div class="fonctionnalite__texte">
+                    <h2>#3 Un bouton d’urgence ultra rapide</h2>
+                    <p>
+                        En cas d’urgence, demande de l’aide en un seul clic ! Contacte les secours les plus proches, partage ta position pour qu’ils te trouvent rapidement, et accède aux numéros d’urgence même sans connexion Internet.
+                    </p>
+                </div>
+                <img src="assets/Tornado.svg" alt="Tornado">
+            </div>
+
+            <div class="fonctionnalite reverse">
+                <img src="assets/Tsunami-2.svg" alt="Tsunami">
+                <div class="fonctionnalite__texte">
+                    <h2>#4 Trouve rapidement un abri sûr !</h2>
+                    <p>
+                        En cas de danger, il est important de savoir où aller ! Trouve rapidement un refuge sur une carte interactive, suis le chemin le plus sûr pour t’y rendre et découvre des conseils simples pour réagir correctement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="temoignages">
+          <h1>Ils ont choisi GUARDIAN</h1>
+          <swiper-container class="mySwiper" pagination="true" navigation="true" space-between="30"
+            centered-slides="true" autoplay-delay="4500" autoplay-disable-on-interaction="false">
+            
+                <swiper-slide>
+                <div class="temoignages__slide-content">
+                    <p class="temoignages__text">
+                    "Quand le cyclone est arrivé, Guardian m’a dit exactement quoi faire. Grâce à l’appli, ma famille et moi sommes restés en sécurité."
+                    </p>
+                    <div class="temoignages__info">
+                    <img src="assets/Awa.jpeg" alt="Awa">
+                    <h3>Awa</h3>
+                    <p>12 ans, <strong>Mayotte</strong></p>
+                    </div>
+                </div>
+                </swiper-slide>
+                
+                <swiper-slide>
+                <div class="temoignages__slide-content">
+                    <p class="temoignages__text">
+                    "Je pensais que les séismes étaient rares, jusqu’à ce que notre maison tremble. Guardian m’a aidé à apprendre comment réagir."
+                    </p>
+                    <div class="temoignages__info">
+                    <img src="assets/jean.jpeg" alt="Jean">
+                    <h3>Jean</h3>
+                    <p>13 ans, <strong>Haïti</strong></p>
+                    </div>
+                </div>
+                </swiper-slide>
+                
+                <swiper-slide>
+                <div class="temoignages__slide-content">
+                    <p class="temoignages__text">
+                    "Mon fils de 12 ans a utilisé Guardian pour apprendre les bases des secours. Un jour, il a pu aider un voisin blessé lors d’un incendie."
+                    </p>
+                    <div class="temoignages__info">
+                    <img src="assets/sophie.jpeg" alt="Sophie">
+                    <h3>Sophie</h3>
+                    <p>39 ans, <strong>France</strong></p>
+                    </div>
+                </div>
+                </swiper-slide>
+      
+            </swiper-container>
+    </section>
+
+        <section class="entreprises">
+          <div class="entreprises__content">
+            <h1 class="entreprises__title">
+              🤝 Guardian, une appli fiable et soutenue par les Experts !
+            </h1>
+            <p class="entreprises__description">
+              Nous travaillons avec les meilleures organisations pour te donner les infos les plus sûres.
+            </p>
+            <div class="entreprises__logos">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/UNICEF_Logo.png/1200px-UNICEF_Logo.png" alt="UNICEF">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Logo_UNESCO_2021.svg/2560px-Logo_UNESCO_2021.svg.png" alt="UNESCO">
+              <img src="https://www.handicap-international.fr/sn_uploads/fr/news/l_handicap_descript_fr_horiz_blue_rgb_1.png" alt="Handicap International">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrXnYSnkXrygchdtJGpU5N1vZeGeZAHbOwA&s" alt="ministère de l'intérieur">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/FEMA_logo.svg" alt="FEMA_logo">
+              <img src="https://www.ecfa.org/Images/MemberLogos/45796.png?x=202501301947448625684" alt="ides">
+              <img src="https://www.unwater.org/sites/default/files/styles/social_large/public/app/uploads/2019/07/220x120_membersUNDRR.png?h=06804c54&itok=6VY2EAVp" alt="undrr">
+            </div>
+          </div>
+        </section>
+      
+        <!-- Section Contact -->
+        <section class="contact">
+          <button class="contact__button">
+            <span>✉</span>
+          </button>
+      
+          <div class="contact__modal">
+            <div class="contact__modal-content">
+              <span class="contact__close">&times;</span>
+              <h2>Contactez-nous</h2>
+              <form class="contact__form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+      
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+      
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+      
+                <button type="submit">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Inclusion de Swiper via CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script>
+          // Exemple de script pour la gestion de la modale Contact
+          const contactButton = document.querySelector('.contact__button');
+          const contactModal = document.querySelector('.contact__modal');
+          const contactClose = document.querySelector('.contact__close');
+      
+          contactButton.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+          });
+      
+          contactClose.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+          });
+      
+          window.addEventListener('click', (event) => {
+            if (event.target === contactModal) {
+              contactModal.style.display = 'none';
+            }
+          });
+        </script>
+      </body>
+
+    <footer class="footer">
+        <!-- <div class="footer__container">
+            <div class="footer__download">
+                <h2>Télécharge Guardian maintenant et sois prêt !</h2>
+                <ul>
+                    <li>✔️ Réagis vite grâce aux alertes en temps réel.</li>
+                    <li>✔️ Apprends les gestes qui sauvent en t’amusant.</li>
+                    <li>✔️ Protège-toi et protège les autres.</li>
+                </ul>
+                <p>📥 Ne laisse pas le danger te surprendre ! <br> Télécharge Guardian et deviens un héros de la sécurité ! 🚀</p>
+                <div class="footer__buttons">
+                    <img src="assets/App store.png" alt="App Store">
+                    <img src="assets/google play.png" alt="Google Play">
+                </div>
+            </div>
+    
+            <div class="footer__news">
+                <h3>📢 Reste informé(e) sur les catastrophes dans le monde !</h3>
+                <p>🔥 Séisme en Turquie, ouragan en Floride, incendies en Californie…<br>
+                    Guardian te donne les dernières infos pour toujours garder une longueur d’avance.</p>
+                <p>Rejoins Guardian et sois toujours prêt !</p>
+            </div>
+    
+            <div class="footer__socials">
+                <p>Suivez-nous sur</p>
+                <img src="https://c.clc2l.com/t/f/a/facebook-nJNpOF.png" alt="facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="linkedin">
+
+                <p>
+                    📲 Télécharge Guardian et prends ta sécurité en main ! 💪
+                </p>
+            </div>
+        </div> -->
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
