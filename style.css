@@ -20,6 +20,7 @@
     --line-height-h3 : 1.4;
 
     --font-size-p : 1rem;
+    --font-weight-p : 400;
     --line-height-p : 1.6;
 
     --white : #fff;
@@ -78,6 +79,7 @@ h3{
 p{
     font-family: var(--font-body);
     font-size: var(--font-size-p);
+    font-weight: var(--font-weight-p);
     line-height: var(--line-height-p);
     color: var(--black);
 
@@ -387,9 +389,8 @@ header{
 .chiffre:hover h3, .chiffre:hover p {
     mix-blend-mode: difference;
 }
-
   
-  @keyframes shake {
+@keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
     }
@@ -470,7 +471,6 @@ header{
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 3rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -552,7 +552,11 @@ section.temoignages h1 {
 
 .temoignages__text {
     font-style: italic;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .temoignages__info h3 {
@@ -563,6 +567,13 @@ section.temoignages h1 {
     margin: 0;
 }
 
+.temoignages__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 section.entreprises {
     padding: 40px 20px;
     text-align: center;
@@ -571,6 +582,43 @@ section.entreprises {
 .entreprises__logos img {
     max-width: 150px;
     margin: 10px;
+}
+
+.temoignages__info img {
+    width: 300px;
+    height: 300px;
+    margin-top: 2vh;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.temoignages__info h3 {
+    margin: 0;
+}
+
+.temoignages__info p {
+    margin: 0;
+}
+
+.entreprises {
+    width: 100%;
+
+    text-align: center;
+    color: var(--black);
+}
+
+.entreprises__logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.entreprises__logos img {
+    max-width: 100%;
+    height: auto;
 }
 
 section.contact {
@@ -636,63 +684,6 @@ section.contact {
     margin-top: 15px;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-.temoignages__text {
-    font-style: italic;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.temoignages__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.temoignages__info img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.temoignages__info h3 {
-    margin: 0;
-}
-
-.temoignages__info p {
-    margin: 0;
-}
-
-.entreprises {
-    background-image: url(assets/bg-entreprise.svg);
-    background-size: 221vh;
-    background-position: right -7vh bottom 34%;
-    background-repeat: no-repeat;
-
-    width: 100%;
-
-    text-align: center;
-    color: var(--black);
-}
-
-.entreprises__logos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    align-items: center;
-    justify-items: center;
-}
-
-.entreprises__logos img {
-    max-width: 100%;
-    height: auto;
 }
 
 .contact{

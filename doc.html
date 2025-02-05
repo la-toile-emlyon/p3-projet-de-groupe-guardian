@@ -69,7 +69,7 @@
         </p>
 
         <div class="personas">
-            <div class="persona">
+            <div class="persona__card">
                 <img src="./assets/Personas/Kids.svg" alt="enfants et adolescents">
                 <h3>
                     👦 Enfants et adolescents
@@ -80,7 +80,7 @@
                 </p>
             </div>
 
-            <div class="persona">
+            <div class="persona__card">
                 <img src="./assets/Personas/Parents.svg" alt="parents et educateurs">
                 <h3>
                     ‍👩‍👦 Parents et éducateurs 
@@ -91,7 +91,7 @@
                 </p>
             </div>
 
-            <div class="persona">
+            <div class="persona__card">
                 <img src="./assets/Personas/Ong.svg" alt="services d'urgence et ONG">
                 <h3>
                     🚑 Services d’urgence et ONG
@@ -102,7 +102,7 @@
                 </p>
             </div>
 
-            <div class="persona">
+            <div class="persona__card">
                 <img src="./assets/Personas/Mairie.svg" alt="collectivités et mairies">
                 <h3>
                     🏛️ Collectivités & mairies 
@@ -119,27 +119,27 @@
         <div class="text-objectif">
             <h1>Objectif : rendre la sécurité accessible à tous, en priorité aux jeunes.</h1>
         </div>
-        <!-- Persona 1 : Ali -->
+        
         <div class="persona">
             <img src="assets/Personas/Ali.png" alt="Jeune garçon tenant des bandes dessinées">
             <div class="text-persona">
                 <h2>Persona 1 : Ali, 11 ans – Un jeune confronté aux catastrophes</h2>
-                <blockquote>
+                <p class="temoignage">
                     « Quand l’inondation est arrivée, j’étais seul à la maison. L’eau montait vite, et je ne savais pas quoi faire. J’aurais aimé avoir un moyen d’apprendre à me préparer et réagir en un clin d’œil au moment venu. »
-                </blockquote>
-                <p><em>Témoignage d’un enfant touché par les inondations au Bangladesh.</em></p>
+                </p>
+                <p>Témoignage d’un enfant touché par les inondations au Bangladesh.</p>
                 <p>Ali vit en zone rurale et a peu d’accès à l’éducation sur les risques. Grâce à Guardian, il apprend à réagir et protéger sa famille.</p>
             </div>
         </div>
-        <!-- Persona 2 : Amina -->
+        
         <div class="persona2">
             <img src="assets/Personas/Amina.png" alt="Mère et fille passant du temps ensemble au parc">
             <div class="text-persona">
                 <h2>Persona 2 : Amina, 36 ans – Mère et éducatrice</h2>
-                <blockquote>
+                <p class="temoignage">
                     « Lors du séisme, mes enfants paniquaient. Je voulais les rassurer, mais moi-même, je ne savais pas comment réagir. Si j’avais eu accès à des informations simples et claires avant, j’aurais pu mieux les protéger. »
-                </blockquote>
-                <p><em>Témoignage d’une mère après le tremblement de terre en Turquie.</em></p>
+                </p>
+                <p>Témoignage d’une mère après le tremblement de terre en Turquie.</p>
                 <p>Amina veut s’assurer que ses enfants sachent quoi faire en cas de danger. Avec Guardian, elle accède à des conseils pratiques et des outils éducatifs.</p>
             </div>
         </div>
@@ -156,7 +156,7 @@
 
         <div class="evolutions__container">
             <div class="evolution">
-                <img src="assets/mockup/mockup1.svg" alt="Mockup V10">
+                <img src="assets/mockup/wireframe1.svg" alt="Mockup V10">
 
                 <h2>V1.0 (Prototype Initial)</h2>
 
@@ -173,7 +173,7 @@
             </div>
 
             <div class="evolution">
-                <img src="assets/mockup/mockup2.svg" alt="Mockup V20">
+                <img src="assets/mockup/mockrocket1.svg" alt="Mockup V20">
 
                 <h2>V2.0 (Nouvelles Fonctionnalités)</h2>
 
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="evolution">
-                <img src="assets/mockup/mockup3.svg" alt="Mockup V30">
+                <img src="assets/mockup/mockrocket2.svg" alt="Mockup V30">
 
                 <h2>V3.0 (Version Actuelle)</h2>
 
@@ -332,22 +332,22 @@
         <div class="equipe__content">
             
             <div class="equipe__card">
+                <img src="assets/profil/_.jpeg" alt="Oumou - Cheffe de Projet" class="equipe__photo">
+                <h3>Oumou</h3>
+                <p>Cheffe de Projet</p>
+                <div class="equipe__socials">
+                    <a href="www.linkedin.com/in/oumou-bathily" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/Oumou-stack" class="social-btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="equipe__card">
                 <img src="assets/profil/GIRL PROFILE 🤎.jpeg" alt="Walid - Développeur Back End" class="equipe__photo">
                 <h3>Walid</h3>
                 <p>Développeur Back End</p>
                 <div class="equipe__socials">
                     <a href="#" class="social-btn">LinkedIn</a>
-                    <a href="#" class="social-btn">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="equipe__card">
-                <img src="assets/profil/pfp♡.jpeg" alt="Adam - Développeur Back End" class="equipe__photo">
-                <h3>Adam</h3>
-                <p>Développeur Back End</p>
-                <div class="equipe__socials">
-                    <a href="#" class="social-btn">LinkedIn</a>
-                    <a href="#" class="social-btn">GitHub</a>
+                    <a href="https://github.com/walidghg" class="social-btn">GitHub</a>
                 </div>
             </div>
             
@@ -356,8 +356,18 @@
                 <h3>Marie</h3>
                 <p>Développeuse Full Stack</p>
                 <div class="equipe__socials">
+                    <a href="https://www.linkedin.com/in/marie-france-lunganga/" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/mariefrancelng" class="social-btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="equipe__card">
+                <img src="assets/profil/pfp♡.jpeg" alt="Adam - Développeur Back End" class="equipe__photo">
+                <h3>Adam</h3>
+                <p>Développeur Back End</p>
+                <div class="equipe__socials">
                     <a href="#" class="social-btn">LinkedIn</a>
-                    <a href="#" class="social-btn">GitHub</a>
+                    <a href="https://github.com/Adam-latoile" class="social-btn">GitHub</a>
                 </div>
             </div>
             
@@ -366,24 +376,44 @@
                 <h3>Moana</h3>
                 <p>Designeuse UX/UI</p>
                 <div class="equipe__socials">
-                    <a href="#" class="social-btn">LinkedIn</a>
-                    <a href="#" class="social-btn">Dribbble</a>
-                </div>
-            </div>
-            
-            <div class="equipe__card">
-                <img src="assets/profil/_.jpeg" alt="Oumou - Cheffe de Projet" class="equipe__photo">
-                <h3>Oumou</h3>
-                <p>Cheffe de Projet</p>
-                <div class="equipe__socials">
-                    <a href="#" class="social-btn">LinkedIn</a>
-                    <a href="#" class="social-btn">Portfolio</a>
+                    <a href="linkedin.com/in/moana-d" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/TheMoana  " class="social-btn">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    section.
+    <section id="perspectives">
+        <div class="perspectives-container">
+            <img src="assets/Logo/variation logo.svg" alt="Logo Guardian" class="perspectives-logo">
+    
+            <div class="perspectives-grid">
+                <div class="perspectives-card">
+                    <h1>Perspectives d’avenir</h1>
+                    <p>
+                        ✅ Version hors ligne avancée – Plus de contenu accessible sans Internet. <br>
+                        💡 Intelligence artificielle – Alertes personnalisées en fonction du profil utilisateur. <br>
+                        🌍 Expansion internationale – Adaptation aux risques de nouvelles régions. <br>
+                        🤝 Partenariats ONG & collectivités – Pour toucher un public plus large. <br>
+                        🔔 Intégration avec les services d’urgence – Meilleure coordination en cas de crise. <br>
+                        📢 Guardian ne cesse d’évoluer pour sauver encore plus de vies !
+                    </p>
+                </div>
+    
+                <div class="perspectives-card">
+                    <h1>Télécharger Guardian, c’est sauver des vies !</h1>
+                    <p>
+                        📥 Soyez prêt en cas de catastrophe ! <br>
+                        ✔ Alertes en temps réel et cartes interactives <br>
+                        ✔ Guides et vidéos éducatives pour apprendre les bons réflexes <br>
+                        ✔ Mode hors ligne pour accéder aux infos sans connexion <br>
+                        ✔ Réseau de solidarité pour aider et être aidé <br>
+                        🚀 Ne laissez pas le hasard décider de votre sécurité. Téléchargez Guardian dès maintenant !
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer__content">
@@ -396,10 +426,10 @@
                 </ul>
                 <p class="footer__cta">📥 Ne laisse pas le danger te surprendre !<br>Télécharge Guardian et deviens un héros de la sécurité ! 🚀</p>
                 <div class="footer__buttons">
-                    <a href="#" class="footer__button">
+                    <a href="https://play.google.com/store/games?device=windows&gl=FR&utm_source=emea_Med&utm_medium=hasem&utm_content=Oct2020&utm_campaign=Evergreen&pcampaignid=MKT-EDR-emea-fr-1710138-Med-hasem-py-Evergreen-Oct2020-Text_Search_BKWS%7CONSEM_kwid_43700007201121919&gad_source=1&gclid=CjwKCAiAtYy9BhBcEiwANWQQL54CSB46IedxkGrZ-neEIN7r20Xidlz54lYrinNTyOhwc2S78GWgMhoCGVkQAvD_BwE&gclsrc=aw.ds" class="footer__button">
                         <img src="assets/google play.png" alt="Télécharger sur Google Play">
                     </a>
-                    <a href="#" class="footer__button">
+                    <a href="https://www.apple.com/fr/app-store/" class="footer__button">
                         <img src="assets/App store.png" alt="Télécharger sur l'App Store">
                     </a>
                 </div>
@@ -410,13 +440,13 @@
                 <p class="footer__news">🔥 Séisme en Turquie, ouragan en Floride, incendies en Californie…<br>Guardian te donne les dernières infos pour toujours garder une longueur d’avance.</p>
                 <p class="footer__cta">Rejoins Guardian et sois toujours prêt !</p>
                 <div class="footer__socials">
-                    <a href="#" class="footer__social">
+                    <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social">
                         <img src="assets/socials logo/facebook-logo.svg" alt="Facebook">
                     </a>
-                    <a href="#" class="footer__social">
+                    <a href="https://www.instagram.com/" class="footer__social">
                         <img src="assets/socials logo/Instagram-logo.png" alt="Instagram">
                     </a>
-                    <a href="#" class="footer__social">
+                    <a href="https://www.linkedin.com/home" class="footer__social">
                         <img src="assets/socials logo/linkedIn-logo.png" alt="LinkedIn">
                     </a>
                 </div>
