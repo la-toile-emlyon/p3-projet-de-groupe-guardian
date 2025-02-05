@@ -119,7 +119,7 @@ nav{
     outline: 0;
 
     background: var(--prevention-yellow);
-    border-color: var(--prevention-yellow);
+    border: solid 2px var(--prevention-yellow);
     border-radius: 10px;
 
 
@@ -139,7 +139,7 @@ nav{
     outline: 0;
 
     background: var(--black);
-    border-color: var(--prevention-yellow);
+    border: solid 2px var(--prevention-yellow);
     border-radius: 10px;
 
 
@@ -298,7 +298,7 @@ header{
 .mockup{
    position: absolute;
    right: 5vh;
-   top: 23vh;
+   top: 29vh;
 
    z-index: 9;
 }
@@ -333,7 +333,7 @@ header{
     align-items: center;
 
     gap: 30px;
-    padding: 50px;
+    padding: 118px;
     position: relative;
 }
 
@@ -358,17 +358,52 @@ header{
     justify-items: center;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 110px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
     position: relative;
 }
 
 .chiffre{
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 50vh;
 }
+
+.chiffre:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+    background-image: url(./assets/paper1.svg);
+    background-size: 55vw 55vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+}
+
+.chiffre:hover h3, .chiffre:hover p {
+    mix-blend-mode: difference;
+}
+
   
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }}
+
 #chiffres h1{
     grid-column: span 2; 
     font-size: var(--font-size-h1);
@@ -376,33 +411,26 @@ header{
     margin-bottom: 30px;
     color: var(--white);
     position: absolute;
-    top: 16px;
+    top: 55px;
     left: 40px;
 }
   
 #chiffres h2{
     font-weight: 400;
     grid-column: span 2; 
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
     padding: 70px 0px 20px 0px;
     color: var(--white);
 }
-  
+
+#chiffres h2 strong{
+    font-size: 4vh;
+}
+
 #chiffres h3{
     font-weight: 400;
     color: var(--white);
-}
-  
-#chiffres .rotate h3{
-    font-weight: 400;
-    padding: 20px;
-    transform: rotate(-3deg); 
-}
-  
-.rotate p{
-    font-weight: 400;
-    padding: 20px;
-    transform: rotate(-3deg); 
+    width: 25vw;
 }
   
 #chiffres p {
@@ -415,11 +443,16 @@ header{
 
 #chiffres h2:last-of-type {
     grid-column: span 2; 
-    font-size: var(--font-size-h2);
-    margin-top: 20px;
+    padding: 0;
+    font-size: var(--font-size-h3);
+    margin-top: 10px;
     font-weight: var(--font-weight-h2);
     color: var(--white);
-}  
+}
+
+.chiffres__slogan{
+    font-size: 5vh;
+}
 
 .fonctionnalites {
     padding: 4rem 2rem;
@@ -428,12 +461,14 @@ header{
 
 .fonctionnalites h1{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    margin-bottom: 11vh;
 }
 
 .fonctionnalites__container{
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -443,14 +478,33 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 2rem;
     text-align: left;
+
+    width: 150vh;
+    height: 76vh;
 }
 
-.fonctionnalite img{
-    max-width: 50%;
-    border-radius: 12px;
+.fonctionnalite__img{
+    width: 29vh;
 
+    position: absolute;
+    right: 50vh;
+}
+
+.fonctionnalite__bg{
+    width: 69vh;
+}
+
+.fonctionnalite__img-reverse{
+    width: 29vh;
+    position: absolute;
+    left: 9vh;
+}
+
+.fonctionnalite__bg-reverse{
+    width: 69vh;
 }
 
 .fonctionnalite__texte{
@@ -483,8 +537,14 @@ swiper-slide img {
 
 section.temoignages {
     padding: 40px 20px;
-    background: #f9f9f9;
+    background-size: 200vh;
+    background-color: var(--lisibilité-beige);
 }
+
+.contact__button .fa-envelope {
+    color: var(--black);
+}
+
 section.temoignages h1 {
     text-align: center;
     margin-bottom: 50px;
@@ -580,7 +640,7 @@ section.contact {
 
 .temoignages__text {
     font-style: italic;
-    font-size: 1.27rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     padding: 20px;
     border-radius: 20px;
@@ -611,30 +671,15 @@ section.contact {
 }
 
 .entreprises {
-    background-image: url('assets/bg-entreprise.svg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-image: url(assets/bg-entreprise.svg);
+    background-size: 221vh;
+    background-position: right -7vh bottom 34%;
+    background-repeat: no-repeat;
 
     width: 100%;
-    
+
     text-align: center;
     color: var(--black);
-}
-
-.entreprises__title {
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-h1);
-    line-height: var(--line-height-h1);
-    color: var(--black);
-    margin-bottom: 20px;
-    font-family: var(--font-title);
-}
-
-.entreprises__description {
-    font-size: var(--font-size-p);
-    line-height: var(--line-height-p);
-    color: var(--black);
-    margin-bottom: 40px;
 }
 
 .entreprises__logos {
@@ -650,19 +695,21 @@ section.contact {
     height: auto;
 }
 
+.contact{
+    z-index: 11;
+}
 .contact__button {
-    section.contact {
-        position: fixed;
-        bottom: 20px;
+    position: fixed;
+    bottom: 20px;
 
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 90px;
-    height: 90px;
+    width: 82px;
+    height: 82px;
     background-color: var(--prevention-yellow);
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(111, 80, 80, 0.2);
+    box-shadow: 0 4px 10px rgb(121 121 121);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -683,9 +730,9 @@ section.contact {
     width: 100%;
     height: 100%;
     background-color: transparent; 
-    display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .contact__modal-content {
@@ -754,8 +801,3 @@ section.contact {
     transform: translateY(-2px);
     color: var(--black);
 }
-.temoignages__text {
-    font-size: 23px; /* ou la taille souhaitée */
-    /* autres styles */
-  }
- 

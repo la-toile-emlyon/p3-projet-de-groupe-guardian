@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="doc.css">
     <link rel="stylesheet" href="doc.html">
-    <link rel="icon" type="image/x-icon" href="assets/Logo/variation logo.svg">
+    <link rel="icon" type="image/x-icon" href="assets/logo/variation logo.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body>
@@ -20,70 +20,38 @@
         </div>
 
         <div class="nav__button">
-            <button class="nav__logo-btn-doc">
-                <a href="index.html">Landing page</a>
-            </button>
-    
-            <button class="nav__logo-btn">
-                Téléchargez l'application
-            </button>
+                <a href="index.html" class="nav__logo-btn-doc">Landing page</a>
+       
+                <a href="https://www.figma.com/proto/ti49iUGHHJG5w8Ne996ISm/Guardian-App?page-id=1%3A3&node-id=5726-20557&viewport=2989%2C313%2C0.56&t=n0Fvt1BvRfdVXXzD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5726%3A20557&show-proto-sidebar=1" class="nav__logo-btn" target="_blank" rel="noopener noreferrer">Téléchargez l'application</a>
         </div>
     </nav>
 
     <section id="slogan">
-        <h1>
-            Protéger, éduquer et renforcer la résilience des jeunes face aux catastrophes naturelles.
-        </h1>
+        <div class="slogan">
+            <h1>
+                Protéger, éduquer et renforcer la résilience des jeunes face aux catastrophes naturelles.
+            </h1>
+        </div>
+
+        <img src="assets/Secheresse-3.svg" alt="Secheresse-3">
+        
     </section>
 
     <section id="contexte">
-        <div class="contexte__introduction">
-            <h1>
-                Contexte
-            </h1>
-
-            <p>
-                Les catastrophes naturelles sont imprévisibles et peuvent frapper à tout moment : <strong>séismes, inondations, incendies, tempêtes, cyclones…</strong> Chaque année, elles affectent <strong>des millions de personnes,</strong> détruisent des habitations et font de nombreuses victimes.
-            </p>
-        </div>
-
-        <div class="contexte__problematique">
-            <h2>
-                Le problème ?
-            </h2>
-            <div class="contexte__problematique-p">
+        <div class="contexte__content">
+            <div class="contexte__texte">
+                <h1>Contexte</h1>
                 <p>
-                    Beaucoup de personnes ne savent <strong>pas comment réagir</strong> face à une catastrophe.
+                    Les catastrophes naturelles sont imprévisibles et peuvent frapper à tout moment : <strong>séismes, inondations, incendies, tempêtes, cyclones…</strong> Chaque année, elles affectent <strong>des millions de personnes,</strong> détruisent des habitations et font de nombreuses victimes.
                 </p>
+                <h2>Le problème ?</h2>
                 <p>
-                    <strong>
-                        Les jeunes, notamment les enfants, sont les plus vulnérables.
-                    </strong>
-                </p>
-                <p>
-                    Il existe <strong>peu d’outils pédagogiques interactifs</strong> pour leur apprendre les bons réflexes.
-                </p>
-            </div>
-
-            <div class="contexte__problematique-constat">
-                <p>
-                    <strong>Guardian est né d’un constat simple,</strong> dans un monde où les catastrophes climatiques sont en augmentation, nous devons mieux nous préparer.
-                </p>
-
-                <p>
-                    <strong>
-                        📢 Une alerte précoce peut sauver des vies. <br>📚 Savoir quoi faire peut faire la différence entre survivre ou être en danger. <br>🤝 Être informé et organisé renforce la résilience des communautés.
-                    </strong>
-                </p>
-            </div>
-
-            <div>
-                <p>
-                    Avec Guardian, chaque jeune peut apprendre en s’amusant, se préparer efficacement et rester informé en cas de crise.
+                    Beaucoup de personnes ne savent <strong>pas comment réagir</strong> face à une catastrophe. <strong>Les jeunes, notamment les enfants, sont les plus vulnérables.</strong> Il existe <strong>peu d’outils pédagogiques interactifs</strong> pour leur apprendre les bons réflexes.
                 </p>
             </div>
         </div>
     </section>
+    
 
     <section class="mission">
         <h3>
@@ -91,7 +59,7 @@
         </h3>
     </section>
 
-    <section id="personas">
+    <section id="cibles">
         <h1>
             À qui s’adresse Guardian ?
         </h1>
@@ -100,10 +68,11 @@
             Guardian s’adresse à toute personne vivant dans des zones à risque, mais son nouveau cœur de cible est les jeunes et leurs encadrants
         </p>
 
-        <div id="personas">
+        <div class="personas">
             <div class="persona">
+                <img src="./assets/Personas/Kids.svg" alt="enfants et adolescents">
                 <h3>
-                    👦 Enfants et adolescents (10-15 ans)
+                    👦 Enfants et adolescents
                 </h3>
 
                 <p>
@@ -112,6 +81,7 @@
             </div>
 
             <div class="persona">
+                <img src="./assets/Personas/Parents.svg" alt="parents et educateurs">
                 <h3>
                     ‍👩‍👦 Parents et éducateurs 
                 </h3>
@@ -122,6 +92,7 @@
             </div>
 
             <div class="persona">
+                <img src="./assets/Personas/Ong.svg" alt="services d'urgence et ONG">
                 <h3>
                     🚑 Services d’urgence et ONG
                 </h3>
@@ -132,6 +103,7 @@
             </div>
 
             <div class="persona">
+                <img src="./assets/Personas/Mairie.svg" alt="collectivités et mairies">
                 <h3>
                     🏛️ Collectivités & mairies 
                 </h3>
@@ -141,10 +113,319 @@
                 </p>
             </div>
         </div>
-
-        h
     </section>
+
+    <section id="objectif">
+        <div class="text-objectif">
+            <h1>Objectif : rendre la sécurité accessible à tous, en priorité aux jeunes.</h1>
+        </div>
+        <!-- Persona 1 : Ali -->
+        <div class="persona">
+            <img src="assets/Personas/Ali.png" alt="Jeune garçon tenant des bandes dessinées">
+            <div class="text-persona">
+                <h2>Persona 1 : Ali, 11 ans – Un jeune confronté aux catastrophes</h2>
+                <blockquote>
+                    « Quand l’inondation est arrivée, j’étais seul à la maison. L’eau montait vite, et je ne savais pas quoi faire. J’aurais aimé avoir un moyen d’apprendre à me préparer et réagir en un clin d’œil au moment venu. »
+                </blockquote>
+                <p><em>Témoignage d’un enfant touché par les inondations au Bangladesh.</em></p>
+                <p>Ali vit en zone rurale et a peu d’accès à l’éducation sur les risques. Grâce à Guardian, il apprend à réagir et protéger sa famille.</p>
+            </div>
+        </div>
+        <!-- Persona 2 : Amina -->
+        <div class="persona2">
+            <img src="assets/Personas/Amina.png" alt="Mère et fille passant du temps ensemble au parc">
+            <div class="text-persona">
+                <h2>Persona 2 : Amina, 36 ans – Mère et éducatrice</h2>
+                <blockquote>
+                    « Lors du séisme, mes enfants paniquaient. Je voulais les rassurer, mais moi-même, je ne savais pas comment réagir. Si j’avais eu accès à des informations simples et claires avant, j’aurais pu mieux les protéger. »
+                </blockquote>
+                <p><em>Témoignage d’une mère après le tremblement de terre en Turquie.</em></p>
+                <p>Amina veut s’assurer que ses enfants sachent quoi faire en cas de danger. Avec Guardian, elle accède à des conseils pratiques et des outils éducatifs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="evolutions">
+        <h1>
+            🚀 Évolution du Projet Guardian
+        </h1>
+
+        <p>
+            🚀 Guardian évolue en permanence grâce aux retours des utilisateurs !
+        </p>
+
+        <div class="evolutions__container">
+            <div class="evolution">
+                <img src="assets/mockup/mockup1.svg" alt="Mockup V10">
+
+                <h2>V1.0 (Prototype Initial)</h2>
+
+                <div class="evolution__texte">
+                    <ul>
+                        <li>
+                            Interface simple avec des pictogrammes clairs
+                        </li>
+                        <li>
+                            Menus épurés pour une navigation facile
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="evolution">
+                <img src="assets/mockup/mockup2.svg" alt="Mockup V20">
+
+                <h2>V2.0 (Nouvelles Fonctionnalités)</h2>
+
+                <div class="evolution__texte">
+                    <ul>
+                        <li>
+                            🔔 Notifications en temps réel pour rester informé à tout moment
+                        </li>
+                        <li>
+                            📄 Accès hors ligne aux fiches de secours, idéal en cas d’urgence
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="evolution">
+                <img src="assets/mockup/mockup3.svg" alt="Mockup V30">
+
+                <h2>V3.0 (Version Actuelle)</h2>
+
+                <div class="evolution__texte">
+                    <ul>
+                        <li>
+                            ✨ Interface intuitive et modernisée
+                        </li>
+                        <li>
+                            🗣️ Contenus interactifs accessibles à tous pour une expérience enrichie
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technologies__utilisees">
+        <div class="container">
+            <h1>Technologies utilisées</h1>
+            <p class="subtitle">
+                Guardian repose sur une architecture technologique moderne, 
+                pensée pour être rapide, fiable et accessible, même en cas de crise.
+            </p>
+    
+            <div class="technologie__grid">
+                <div class="technologie__card">
+                    <div class="technologie__icon">
+                        <img src="assets/technologies/React_Native_Logo 1.svg" alt="React">
+                    </div>
+                    <div class="technologie__content">
+                        <h3>React Native - Développement mobile performant</h3>
+                        <p>
+                            Une technologie cross-platform permettant à Guardian d’être <br> disponible sur Android et iOS avec une expérience fluide et homogène.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="technologie__card reverse">
+                    <div class="technologie__icon">
+                        <img src="assets/technologies/Fire.svg" alt="Firebase">
+                    </div>
+                    <div class="technologie__content">
+                        <h3>Firebase – Stockage et sécurité des données garantis</h3>
+                        <p>
+                            Une base de données en temps réel pour une synchronisation instantanée.
+                        </p>
+                        <p>
+                            Un stockage sécurisé des contenus éducatifs et des informations critiques.
+                        </p>
+                        <p>
+                            Une authentification fiable pour protéger les comptes utilisateurs.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="technologie__card">
+                    <div class="technologie__icon">
+                        <img src="assets/technologies/OneSignal.svg" alt="OneSignal">
+                    </div>
+                    <div class="technologie__content">
+                        <h3>OneSignal – Système d’alertes ultra-réactif</h3>
+                        <p>
+                            Envoi de notifications push en temps réel pour avertir <br> les utilisateurs des risques imminents.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="technologie__card reverse">
+                    <div class="technologie__icon">
+                        <img src="assets/technologies/OneStreetMap.svg" alt="OpenStreetMap">
+                    </div>
+                    <div class="technologie__content">
+                        <h3>OpenStreetMap - Cartographie et navigation hors ligne</h3>
+                        <p>
+                            Intégration de cartes interactives pour localiser les zones à risque, refuges et itinéraires sûrs, même sans connexion Internet.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="technologie__card">
+                    <div class="technologie__icon">
+                        <img src="assets/technologies/download 1.svg" alt="Accessibilité">
+                    </div>
+                    <div class="technologie__content">
+                        <h3>Accessibilité intégrée pour tous</h3>
+                        <p>
+                            Synthèse vocale – Lecture automatique du contenu pour les utilisateurs en difficulté.
+                        </p>
+                        <p>
+                            Traduction automatique – Adaptation en plusieurs langues pour toucher un maximum de personnes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technologies__choix">
+        <h1>
+            Pourquoi ces technologies ?
+        </h1>
+    
+        <div>
+            <p>
+                ✅ <strong>Fiabilité et rapidité</strong> – Fonctionnement fluide même sur des réseaux instables. <br>
+                ✅ <strong>Légèreté</strong> – Optimisé pour les smartphones bas de gamme et les zones à faible connectivité. <br>
+                ✅ <strong>Accessibilité</strong> – Conçu pour être utilisé par tous, y compris les enfants et les personnes vulnérables.<br>
+                ✅ <strong>Sécurité</strong> – Données protégées et synchronisées en toute confidentialité.
+            </p>
+    
+            <p>
+                📌 Avec Guardian, nous faisons le choix d’une technologie au service de la protection et de la prévention. 
+            </p>
+        </div>
+    </section>
+
+    <section id="quiz-section">
+        <h2>🎯 Prêt à relever le défi ?</h2>
+        <p>
+          Teste tes connaissances sur les catastrophes naturelles en moins de 2 minutes, grâce à notre quiz interactif !
+          💡 C’est simple, rapide et 100% fun.
+          👉 Alors, tu tentes ta chance ?
+        </p>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/ti49iUGHHJG5w8Ne996ISm/Guardian-App?page-id=1%3A3&node-id=5561-3284&viewport=924%2C-286%2C0.27&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5511%3A13417&embed-host=share" allowfullscreen>
+          </iframe>
+    
+        <div class="cta">
+          <a href="#">Lance le quiz !</a>
+        </div>
+      </section>
+    
+    <section id="equipe">
+        <div class="equipe__intro">
+            <h1>Découvrez notre équipe</h1>
+            <p>
+                Une équipe dynamique et passionnée prête à relever les défis pour faire de Guardian un projet innovant.
+            </p>
+        </div>
+        <div class="equipe__content">
+            
+            <div class="equipe__card">
+                <img src="assets/profil/GIRL PROFILE 🤎.jpeg" alt="Walid - Développeur Back End" class="equipe__photo">
+                <h3>Walid</h3>
+                <p>Développeur Back End</p>
+                <div class="equipe__socials">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="equipe__card">
+                <img src="assets/profil/pfp♡.jpeg" alt="Adam - Développeur Back End" class="equipe__photo">
+                <h3>Adam</h3>
+                <p>Développeur Back End</p>
+                <div class="equipe__socials">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="equipe__card">
+                <img src="assets/profil/59b62aa1-d9a0-4353-85d8-fb7e37f36f07.jpeg" alt="Marie - Développeuse Full Stack" class="equipe__photo">
+                <h3>Marie</h3>
+                <p>Développeuse Full Stack</p>
+                <div class="equipe__socials">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="equipe__card">
+                <img src="assets/profil/Blxck ai.jpeg" alt="Moana - Designeuse UX/UI" class="equipe__photo">
+                <h3>Moana</h3>
+                <p>Designeuse UX/UI</p>
+                <div class="equipe__socials">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">Dribbble</a>
+                </div>
+            </div>
+            
+            <div class="equipe__card">
+                <img src="assets/profil/_.jpeg" alt="Oumou - Cheffe de Projet" class="equipe__photo">
+                <h3>Oumou</h3>
+                <p>Cheffe de Projet</p>
+                <div class="equipe__socials">
+                    <a href="#" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    section.
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__left">
+                <h2>Télécharge Guardian maintenant et sois prêt !</h2>
+                <ul class="footer__features">
+                    <li>✔️ Réagis vite grâce aux alertes en temps réel.</li>
+                    <li>✔️ Apprends les gestes qui sauvent en t’amusant.</li>
+                    <li>✔️ Protège-toi et protège les autres.</li>
+                </ul>
+                <p class="footer__cta">📥 Ne laisse pas le danger te surprendre !<br>Télécharge Guardian et deviens un héros de la sécurité ! 🚀</p>
+                <div class="footer__buttons">
+                    <a href="#" class="footer__button">
+                        <img src="assets/google play.png" alt="Télécharger sur Google Play">
+                    </a>
+                    <a href="#" class="footer__button">
+                        <img src="assets/App store.png" alt="Télécharger sur l'App Store">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__right">
+                <h2>📢 Reste informé(e) sur les catastrophes dans le monde !</h2>
+                <p class="footer__news">🔥 Séisme en Turquie, ouragan en Floride, incendies en Californie…<br>Guardian te donne les dernières infos pour toujours garder une longueur d’avance.</p>
+                <p class="footer__cta">Rejoins Guardian et sois toujours prêt !</p>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <img src="assets/socials logo/facebook-logo.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="assets/socials logo/Instagram-logo.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="assets/socials logo/linkedIn-logo.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <p class="footer__cta">📲 Télécharge Guardian et prends ta sécurité en main ! 💪</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

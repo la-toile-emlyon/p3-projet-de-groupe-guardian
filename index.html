@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="doc.css" type="text/css">
     <link rel="stylesheet" href="doc.html">
-    <link rel="icon" type="image/x-icon" href="assets/Logo/variation logo.svg">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo/variation logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -20,13 +20,10 @@
         </div>
 
         <div class="nav__button">
-            <button class="nav__logo-btn-doc">
-                <a href="doc.html">Documentation</a>
-            </button>
+                <a href="doc.html" class="nav__logo-btn-doc">Documentation</a>
     
-            <button class="nav__logo-btn">
-                Téléchargez l'application
-            </button>
+                <a href="https://www.figma.com/proto/ti49iUGHHJG5w8Ne996ISm/Guardian-App?page-id=1%3A3&node-id=5726-20557&viewport=2989%2C313%2C0.56&t=n0Fvt1BvRfdVXXzD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5726%3A20557&show-proto-sidebar=1" class="nav__logo-btn" target="_blank" rel="noopener noreferrer">Téléchargez l'application</a>
+
         </div>
     </nav>
 
@@ -56,7 +53,7 @@
         </div>
     
         <div class="mockup">
-            <img src="assets/mockup.png" alt="App mockup">
+            <img src="assets/mockupsvg.svg" alt="App mockup">
         </div>
     
         <div class="header__buttons">
@@ -127,7 +124,7 @@
           </p>
       </div>
   
-      <h2 class="bottom">
+      <h2 class="chiffres__slogan">
           Ne sois pas une statistique, sois prêt avec Guardian.
       </h2>
     </section>
@@ -145,11 +142,14 @@
                         Guardian te prévient dès qu’une catastrophe approche ! Grâce à des alertes précises adaptées à l’endroit où tu te trouves, tu peux agir rapidement. Et même sans Internet, l’application reste active pour que tu ne sois jamais pris au dépourvu.
                     </p>
                 </div>
-                <img src="assets/Tornado.svg" alt="Tornado">
+        
+                <img src="assets/Fonctionnalités/Alertes.svg" alt="Alertes" class="fonctionnalite__img">
+                <img src="assets/Tornade-3.svg" alt="Tornade-3" class="fonctionnalite__bg">
             </div>
     
             <div class="fonctionnalite reverse">
-                <img src="assets/Tsunami-2.svg" alt="Tsunami">
+                <img src="assets/Fonctionnalités/eduquer.svg" alt="eduquer" class="fonctionnalite__img-reverse">
+                <img src="assets/Sauvetage.svg" alt="Sauvetage" class="fonctionnalite__bg-reverse">
                 <div class="fonctionnalite__texte">
                     <h2>#2 Apprendre en s’amusant !</h2>
                     <p>
@@ -165,11 +165,15 @@
                         En cas d’urgence, demande de l’aide en un seul clic ! Contacte les secours les plus proches, partage ta position pour qu’ils te trouvent rapidement, et accède aux numéros d’urgence même sans connexion Internet.
                     </p>
                 </div>
-                <img src="assets/Tornado.svg" alt="Tornado">
+
+                <img src="assets/Fonctionnalités/help.svg" alt="aide" class="fonctionnalite__img">
+                <img src="assets/Tremblement de terre-2.svg" alt="Tremblement" class="fonctionnalite__bg">
             </div>
 
             <div class="fonctionnalite reverse">
-                <img src="assets/Tsunami-2.svg" alt="Tsunami">
+                <img src="assets/Fonctionnalités/abris.svg" alt="abris" class="fonctionnalite__img-reverse">
+                <img src="assets/Eboulement-1.svg" alt="eboulement" class="fonctionnalite__bg">
+
                 <div class="fonctionnalite__texte">
                     <h2>#4 Trouve rapidement un abri sûr !</h2>
                     <p>
@@ -223,7 +227,6 @@
                     </div>
                 </div>
                 </swiper-slide>
-      
             </swiper-container>
     </section>
 
@@ -247,11 +250,10 @@
           </div>
         </section>
       
-        <!-- Section Contact -->
         <section class="contact">
-          <button class="contact__button">
-            <span>✉</span>
-          </button>
+            <button class="contact__button">
+                <span><i class="fa-solid fa-envelope"></i></span>
+            </button>
       
           <div class="contact__modal">
             <div class="contact__modal-content">
@@ -273,28 +275,6 @@
           </div>
         </section>
       
-        <!-- Inclusion de Swiper via CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-        <script>
-          // Exemple de script pour la gestion de la modale Contact
-          const contactButton = document.querySelector('.contact__button');
-          const contactModal = document.querySelector('.contact__modal');
-          const contactClose = document.querySelector('.contact__close');
-      
-          contactButton.addEventListener('click', () => {
-            contactModal.style.display = 'flex';
-          });
-      
-          contactClose.addEventListener('click', () => {
-            contactModal.style.display = 'none';
-          });
-      
-          window.addEventListener('click', (event) => {
-            if (event.target === contactModal) {
-              contactModal.style.display = 'none';
-            }
-          });
-        </script>
       </body>
 
     <footer class="footer">
@@ -332,7 +312,8 @@
             </div>
         </div> -->
     </footer>
-
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

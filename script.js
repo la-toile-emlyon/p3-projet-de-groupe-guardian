@@ -41,33 +41,22 @@ navButtons.forEach((button, index) => {
 
 
 // Contact form
-navButtons[0].classList.add('active');
-slides[0].classList.add('active');
+const contactButton = document.querySelector('.contact__button');
+const contactModal = document.querySelector('.contact__modal');
+const contactClose = document.querySelector('.contact__close');
 
-document.addEventListener("DOMContentLoaded", function () {
-    const contactButton = document.querySelector(".contact__button");
-    const modal = document.querySelector(".contact__modal");
-    const closeModal = document.querySelector(".contact__close");
-    modal.style.display = "none";
-
-
-    // Ouvrir la modal au clic sur le bouton jaune
-    contactButton.addEventListener("click", function () {
-        modal.style.display = "flex";
-    });
-
-    // Fermer la modal au clic sur le bouton de fermeture
-    closeModal.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-    // Fermer la modal au clic en dehors du formulaire
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-        monBouton.addEventListener('click', function(event) {
-            event.stopPropagation()
-          });
-    });
+contactButton.addEventListener('click', () => {
+    contactModal.style.display = 'flex'; // Affiche la modal
 });
+
+contactClose.addEventListener('click', () => {
+    contactModal.style.display = 'none'; // Cache la modal
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === contactModal) {
+        contactModal.style.display = 'none'; // Cache la modal si on clique en dehors
+    }
+});
+
+// Section contexte - documentaire
