@@ -59,4 +59,15 @@ window.addEventListener('click', (event) => {
     }
 });
 
-// Section contexte - documentaire
+// Div - cyclone
+
+const cyclone = document.getElementById("cyclone");
+
+window.addEventListener("scroll", () => {
+    // Calculez la valeur de rotation en fonction du défilement
+    const rotation = window.scrollY / 5; // Ajustez le facteur pour contrôler la vitesse
+
+    // Appliquez la rotation à l'icône
+    cyclone.querySelector("svg").style.transform = `rotate(${rotation}deg)`;
+});
+
