@@ -46,7 +46,6 @@
     background-position: right 0% bottom 93%;
     background-repeat: no-repeat;
     padding: 2rem 0;
-    /* width: 218vh; */
     width: 100%;
     position: relative;
 }
@@ -174,7 +173,7 @@
 }
 
 .persona__card img {
-    width: 22vw; 
+    width: 23vw; 
     height: 30vh;
     object-fit: cover; 
     overflow: hidden;
