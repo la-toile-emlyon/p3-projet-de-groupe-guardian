@@ -11,6 +11,7 @@
 .slogan {
     max-width: 800px; 
     margin: 0 auto; 
+    margin-left: 23.7rem;
 }
 
 #slogan h1 {
@@ -41,7 +42,7 @@
 }
 
 #contexte{
-    background-image: url(assets/Feu-de-forêt.svg);
+    background-image: url(assets/feu-de-foret.svg);
     background-size: 92vh;
     background-position: right 0% bottom 93%;
     background-repeat: no-repeat;
